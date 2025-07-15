@@ -9,7 +9,7 @@ data = list(
   t = nrow(df),
   K = 3,
   delta_t = 1,
-  y = df$enter_univ_rate,
+  y = df$enter_univ_rate
 )
 
 

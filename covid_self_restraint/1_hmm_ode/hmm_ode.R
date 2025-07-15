@@ -40,7 +40,7 @@ infectious <- df_for_model$Tokyo # 新規感染者数
 
 data <- list(
   t = length(D),
-  K = 2,
+  K = 3,
   Dt = 1,
   y = y,
   D = D,
@@ -52,7 +52,7 @@ data
 
 fit <- model$sample(
   data = data,
-  chains = 1,
+  chains = 2,
   parallel_chains = 4,
   iter_warmup = 5000,
   iter_sampling = 10000,
